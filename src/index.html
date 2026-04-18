@@ -351,7 +351,9 @@
           </p>
           <span class="text-verde-300">05:40 - 07:00</span>
         </div>
-        <div class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl sm:translate-y-12 transition-transform sm:hover:translate-y-10"">
+        <div
+          class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl sm:translate-y-12 transition-transform sm:hover:translate-y-10"
+        >
           <div
             class="bg-verde-400 rounded-full size-10 flex items-center justify-center"
           >
@@ -364,7 +366,9 @@
           </p>
           <span class="text-verde-300">12:00 - 14:00</span>
         </div>
-        <div class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"">
+        <div
+          class="grid flex-1 gap-4 bg-verde-900 p-6 sm:p-8 rounded-xl transition-transform sm:hover:-translate-y-2"
+        >
           <div
             class="bg-verde-400 rounded-full size-10 flex items-center justify-center"
           >
@@ -377,6 +381,90 @@
           <span class="text-verde-300">19:00 - 21:00</span>
         </div>
       </div>
+    </section>
+
+    <section
+      id="contato"
+      class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8"
+    >
+      <div>
+        <h1 class="font-serif text-4xl text-verde-300 mb-4">Nossos Contatos</h1>
+        <p class="text-gray-200 text-balance mb-8">
+          Tem interesse em passar uma temporada na Forest? Entre em contato com
+          a gente por telefone ou email.
+        </p>
+        <div class="grid gap-4">
+          <div>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h2 class="mb-2 text-2xl text-verde-300 font-serif">Base</h2>
+            <p class="text-gray-200">
+              Rua da Mata, 123 - Floresta Nacional - MG
+            </p>
+          </div>
+
+          <div>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h2 class="mb-2 text-2xl text-verde-300 font-serif">Email</h2>
+            <p class="text-gray-200">contato@forest.com</p>
+          </div>
+
+          <div>
+            <span class="h-0.5 w-6 bg-verde-400 inline-block"></span>
+            <h2 class="mb-2 text-2xl text-verde-300 font-serif">Telefone</h2>
+            <p class="text-gray-200">35 99999-9999</p>
+          </div>
+        </div>
+      </div>
+      <form
+        class="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8"
+        action=""
+      >
+        <div class="grid gap-1">
+          <label class="text-white" for="nome">Nome</label>
+          <input
+            id="nome"
+            name="nome"
+            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+            type="text"
+          />
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="grid gap-1">
+            <label class="text-white" for="email">Email</label>
+            <input
+              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div class="grid gap-1">
+            <label class="text-white" for="telefone">Telefone</label>
+            <input
+              id="telefone"
+              name="telefone"
+              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              placeholder="(35) 00000-0000"
+              type="text"
+            />
+          </div>
+        </div>
+        <div class="grid gap-1">
+          <label class="text-white" for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none"
+            type="text"
+          ></textarea>
+        </div>
+        <button
+          class="place-self-start bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full"
+        >
+          Enviar Email
+        </button>
+      </form>
     </section>
   </body>
 </html>
